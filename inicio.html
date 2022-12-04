@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Bio</title>
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="plugins/magnific.popup.css">
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/jquery.bxslider.min.js"></script>
+    <script src="plugins/magnif.poup.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#slider').bxSlider({
+                mode: 'fade',
+                speed: '1000',
+                auto: true
+            });
+            $('#fotos').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="container">
+            <a href="#"><img src="logo_bio.png" alt="Logo Bio" id="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="inicio.html">Início</a></li>
+                    <li><a href="reino.html">Reino Fungi</a></li>
+                    <li><a href="caracteristicas.html">Características</a></li>
+                    <li><a href="curiosidades.html">Curiosidades</a></li>
+                    <li><a href="reproducao.html">Reprodução</a></li>
+                    <li><a href="principais.html">Principais Fungos</a></li>
+                    <li><a href="importancia.html">Importância</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <p>
+            <div class="texto">
+                <h1>O que são fungos?</h1>
+                <img src="imagens-inicio/Estrutura_Fungo.png" alt="Estrutura fungo">
+    
+                <p>Os fungos já foram classificados como vegetais e também como protistas. Atualmente são agrupados num reino à parte, chamado o reino Fungi. Este grupo inclui organismos diversos, que vivem em quase todos os ambientes terrestres e apresentam uma grande variação de formas e tamanhos.
+                </p>
+    
+                <p>
+                    Podem ser desde fungos microscópicos, formados por uma única célula (unicelulares), como é o caso das leveduras, até formas pluricelulares que atingem um tamanho considerável, como os bolores e os cogumelos. O maior fungo conhecido vive sob o solo de uma floresta nos Estados Unidos e ocupa uma área subterrânea de cerca de 9 km2!
+                <p>
+                    Os fungos são organismos heterótrofos, ou seja, não produzem o próprio alimento, dependem da ingestão de matéria orgânica, viva ou morta, para sobreviver. As espécies que se alimentam de matéria orgânica morta possuem um papel importante na decomposição de animais e vegetais e são chamadas de saprófagas.
+        </p>
+    </main>
+
+    <section id="galeria">
+        <div class="container">
+            <ul id="fotos">
+                <li><a href="imagens-inicio/Galeria-Inicio/fotosg/galeria_fungos01g.png"><img src="imagens-inicio/Galeria-Inicio/fotosp/fungos_galeria01p.png"
+                            alt="Foto 01"></a></li>
+                <li><a href="imagens-inicio/Galeria-Inicio/fotosg/galeria_fungos02g.png"><img src="imagens-inicio/Galeria-Inicio/fotosp/galeria_fungos02p.png"
+                            alt="Foto 02"></a></li>
+                <li><a href="imagens-inicio/Galeria-Inicio/fotosg/galeria_fungos03g.png"><img src="imagens-inicio/Galeria-Inicio/fotosp/galeria_fungos03p.png"
+                            alt="Foto 03"></a></li>
+                <li><a href="imagens-inicio/Galeria-Inicio/fotosg/galeria_fungos04g.png"><img src="imagens-inicio/Galeria-Inicio/fotosp/galeria_fungos04p.png"
+                            alt="Foto 04"></a></li>
+                <li><a href="imagens-inicio/Galeria-Inicio/fotosg/galeria_fungos05g.png"><img src="imagens-inicio/Galeria-Inicio/fotosp/galeria_fungos05p.png"
+                            alt="Foto 05"></a></li>
+                <li><a href="imagens-inicio/Galeria-Inicio/fotosg/galeria_fungos06g.png"><img src="imagens-inicio/Galeria-Inicio/fotosp/galeria_fungos06p.png"
+                            alt="Foto 06"></a></li>
+                <li><a href="imagens-inicio/Galeria-Inicio/fotosg/galeria_fungos07g.png"><img src="imagens-inicio/Galeria-Inicio/fotosp/galeria_fungos07p.png"
+                            alt="Foto 07"></a></li>
+                <li><a href="imagens-inicio/Galeria-Inicio/fotosg/galeria_fungos08g.png"><img src="imagens-inicio/Galeria-Inicio/fotosp/galeria_fungos08p.png"
+                            alt="Foto 08"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="main_footer container">
+      
+        <div class="content">
+            <div class="colfooter">
+                
+                <div class="titleFooter"> <span class="icon icon-world"></span> Menu</div>
+                <ul>
+                
+                  <li><a href="#" title="Página Inícial">Início</a></li>
+                  <li><a href="#" title="Reino">Reino Fungi</a></li>
+                  <li><a href="#" title="Características">Características</a></li>
+                  <li><a href="#" title="Curiosidades">Curiosidades</li>
+                  <li><a href="#" title="Reprodução">Reprodução</a></li>
+                  <li><a href="#" title="Principais">Principais Fungos</a></li>
+                  <li><a href="#" title="Importância">Importância</a></li>
+                
+                </ul>
+            </div>        
+            <div class="colfooter">
+               
+              <div class="titleFooter"> <span class="icon icon-share-outline"></span> Redes Sociais</div>  
+              <a href="#" class="redesocial"><span> <i class="icon icon-facebook"></i> <strong>Facebook:</strong> Biologia</span></a>            
+              <a href="#" class="redesocial"><span> <i class="icon icon-instagram"></i><strong>Instagram:</strong> @biologia</span></a>            
+              <a href="#" class="redesocial"><span> <i class="icon icon-twitter"></i> <strong>Twitter:</strong> @biologia</span></a>                     
+            </div>
+            <div class="colfooter">
+               
+              <div class="titleFooter"> <span class="icon icon-bubble-2"></span> Atendimentos</div>
+              <p><i class="icon icon-mail"></i> biologia@gmail.com</p>
+              <p><i class="icon icon-phone"></i> 21 90000-0000</p>
+              <p><i class="icon icon-whatsapp"></i> 21 90000-0000</p>
+            </div>
+            <div class="colfooter">
+               
+              <div class="titleFooter"> <span class="icon icon-mail-3"></span> Contato</div>  
+              
+                <form class="my-formulario" action="#" method="post">
+                        
+                     <label class="label">
+                                      
+                           <input class="effect-line" type="text" placeholder="Seu nome" autocomplete="off">
+                           <span class="focus-border"></span>
+                                  
+                     </label>
+                      <label class="label">
+                                      
+                           <input class="effect-line" type="text" placeholder="Seu e-mail" autocomplete="off">
+                           <span class="focus-border"></span>
+                                  
+                      </label>
+                      <label class="label">
+                                      
+                           <input class="effect-line" type="text" placeholder="Seu assunto" autocomplete="off">
+                           <span class="focus-border"></span>
+                                  
+                      </label>
+                      <label class="label">
+                                      
+                          <textarea class="effect-line" name="mensagem" placeholder="Deixe sua mensagem" rows="2" autocomplete="off"></textarea>
+                          <span class="focus-border"></span>
+                                  
+                      </label>
+                      <input type="hidden" name="acao" value="enviar">
+                      <button class="btn-enviar" title="Enviar">Enviar</button>
+                </form>
+            </div>
+            <div class="clear"></div>
+        
+        </div>
+        <div class="main_footer_copy">
+            
+            <p class="m-b-footer"> Bio - 2022, todos os direitos reservados.</p> 
+            <p class="by"><i class="icon icon-heart-3"></i> Desenvolvido por: <a href="#" title="Seu nome">Alex Moura da Silva</a></p>
+        
+        </div>
+    </footer>
+</body>
+
+</html>
